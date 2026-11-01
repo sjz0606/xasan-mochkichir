@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Xasan Mochkichiri — Bitta taom. Mukammal.</title>
+<meta name="description" content="Xasan Mochkichiri, Keles. Faqat moshkichiri: mosh, guruch va semiz buqa go'shti ulkan qozonda. To'liq set — 65 000 so'm. Dostavka: 93 777 51 51.">
+<meta name="theme-color" content="#0b0705">
+<meta property="og:title" content="Xasan Mochkichiri — Bitta taom. Mukammal.">
+<meta property="og:description" content="Moshkichiri + go'sht + non + choy + salat + limon + navot + xizmat = 65 000 so'm.">
+<meta property="og:image" content="assets/img/hero.jpg">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader"><img src="assets/logo.jpg" alt=""><b>Xasan Mochkichiri</b><span class="ld"><i id="ldbar"></i></span></div>
+<canvas id="gl" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top"><img src="assets/logo.jpg" alt="Xasan Mochkichiri logotipi"><span>Xasan<br><i>Mochkichiri</i></span></a>
+  <nav class="links">
+    <a href="#set">Set</a><a href="#tarkib">Tarkib</a><a href="#jarayon">Jarayon</a><a href="#videolar">Videolar</a><a href="#manzil">Manzil</a>
+  </nav>
+  <span class="status" id="status"><i></i><b>…</b></span>
+  <a class="btn fire sm" href="#buyurtma">Buyurtma</a>
+  <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false"><span></span><span></span></button>
+</header>
+<div class="mnav" id="mnav">
+  <nav>
+    <a href="#set"><small>01</small>Set</a><a href="#tarkib"><small>02</small>Tarkib</a><a href="#jarayon"><small>03</small>Jarayon</a>
+    <a href="#videolar"><small>04</small>Videolar</a><a href="#buyurtma"><small>05</small>Buyurtma</a><a href="#manzil"><small>06</small>Manzil</a>
+  </nav>
+  <div class="mnav-f"><a class="btn fire full" href="tel:+998937775151">📞 93 777 51 51</a><p class="muted small">Keles · Abdurahmon ko'chasi</p></div>
+</div>
+
+<main>
+<!-- 1. HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-in">
+    <h1><span class="ln"><span>Bitta taom.</span></span><span class="ln"><em>Mukammal.</em></span></h1>
+    <p class="lead">Xasan Mochkichiri — faqat <b>moshkichiri</b>. Mosh, guruch va semiz buqa go'shti ulkan qozonda, o'tin olovida. Boshqa hech narsa — chunki bunisi yetarli.</p>
+    <div class="cta">
+      <a class="btn fire" href="#buyurtma">Set buyurtma — <span data-price></span></a>
+      <a class="btn ghost" href="tel:+998937775151">📞 93 777 51 51</a>
+    </div>
+    <blockquote class="hero-q">«5 ta qozon tugadi — 6-si ochildi!»<cite>— Xasan aka, oddiy kun haqida</cite></blockquote>
+  </div>
+  <div class="scroll-cue"><span></span>pastga</div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="mq">
+  <span>Hurmatdasizlar!</span><b>✦</b><span>Moshkichiri</span><b>✦</b><span>977 kg buqa</span><b>✦</b><span>O'tin olovi</span><b>✦</b><span>65 000 — hammasi ichida</span><b>✦</b>
+  <span>Hurmatdasizlar!</span><b>✦</b><span>Moshkichiri</span><b>✦</b><span>977 kg buqa</span><b>✦</b><span>O'tin olovi</span><b>✦</b><span>65 000 — hammasi ichida</span><b>✦</b>
+</div></div>
+
+<!-- 2. SET -->
+<section class="set" id="set">
+  <div class="set-pin">
+    <div class="wrap set-grid">
+      <div class="set-copy">
+        <p class="eyebrow">To'liq set</p>
+        <h2>Bitta narx.<br><em>Hammasi ichida.</em></h2>
+        <ul class="set-list" id="setList"></ul>
+        <div class="set-price">
+          <div><small>1 kishilik set</small><b data-price></b></div>
+          <a class="btn fire" href="#buyurtma">Buyurtma berish →</a>
+        </div>
+      </div>
+      <div class="set-img">
+        <img src="assets/img/set.webp" alt="Moshkichiri to'liq seti: go'sht, non, choy, salat, limon, navot">
+        <div class="spots" id="spots"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. TARKIB -->
+<section class="tarkib" id="tarkib">
+  <div class="wrap head">
+    <p class="eyebrow">Tarkibi</p>
+    <h2>Oddiy masalliq.<br><em>Sirli nisbat.</em></h2>
+  </div>
+  <div class="ingr-swipe" id="ingrSwipe"></div>
+  <div class="ingr-dots" id="ingrDots"></div>
+  <div class="ingr-pin">
+    <div class="ingr-track" id="ingrTrack"><img src="assets/img/ingr.webp" alt="Moshkichiri masalliqlari"></div>
+    <div class="ingr-cap" id="ingrCap"><span class="n" id="icN">01 / 10</span><b id="icT">Mosh</b><p id="icP"></p></div>
+    <div class="ingr-bar"><i id="icBar"></i></div>
+  </div>
+  <ul class="wrap ingr-list" id="ingrList"></ul>
+</section>
+
+<!-- 4. JARAYON -->
+<section class="jarayon" id="jarayon">
+  <div class="wrap head">
+    <p class="eyebrow">Bozordan — qozongacha</p>
+    <h2>Hammasi <em>kamera oldida.</em></h2>
+  </div>
+  <div class="wrap step-tabs" id="stepTabs"></div>
+  <div class="wrap steps-wrap">
+    <div class="steps" id="steps"></div>
+    <div class="screen"><div class="screen-in hv" id="phoneIn"></div><span class="screen-tag">▶ Haqiqiy video · @xasan_mochkichir</span></div>
+  </div>
+</section>
+
+<!-- 6. SPOON / QUOTES -->
+<section class="quotes">
+  <div class="q-bg" style="background-image:url(assets/img/spoon.webp)"></div>
+  <div class="wrap q-in">
+    <p class="eyebrow">Xasan aka aytadi</p>
+    <div class="q-rot" id="qRot"></div>
+    <div class="q-dots" id="qDots"></div>
+  </div>
+</section>
+
+<!-- 7. AKSIYA -->
+<section class="promo" id="aksiya">
+  <div class="wrap promo-in">
+    <div class="promo-vid hv" style="--poster:url(assets/v08.jpg)"><video src="assets/v08.mp4" poster="assets/v08.jpg" muted loop playsinline preload="none" data-auto></video></div>
+    <div class="promo-copy">
+      <p class="eyebrow">Aksiya · 15-noyabrgacha</p>
+      <h2>1 milliard qamrov =<br><em>5 qozon bepul</em></h2>
+      <p class="muted">Xasan aka va'da berdi: sahifa qamrovi bir oyda 1 milliardga yetsa — 1 tonnalik buqa so'yiladi va 5 qozon moshkichiri xalqqa <b>bepul</b> tarqatiladi. Layk, izoh, ulashish — har biri hisobga kiradi.</p>
+      <div class="countdown" id="cd"><div><b>0</b><span>kun</span></div><div><b>0</b><span>soat</span></div><div><b>0</b><span>daqiqa</span></div><div><b>0</b><span>soniya</span></div></div>
+      <a class="btn fire" href="https://www.instagram.com/xasan_mochkichir/" target="_blank" rel="noopener">Obuna bo'lib, qo'llab-quvvatlash →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 8. YAXSHILIK -->
+<section class="good">
+  <div class="wrap good-in">
+    <div class="good-copy">
+      <p class="eyebrow">Yaxshilik ham menyuda</p>
+      <h2>«Lafz qildimmi —<br><em>oldim.</em>»</h2>
+      <p class="muted">Sotuvchi 16 millionga rozi bo'ldi — Xasan aka va'da qilgan 18 millionni berdi. Ortiqcha 2 million — yetim va boquvchisini yo'qotgan oilalarga. 977 kg lik buqa uchun otaxonga 73 million o'rniga 80 million: «Nabiralaringizning to'yiga».</p>
+    </div>
+    <div class="good-vids">
+      <figure class="hv" data-v="v00" style="--poster:url(assets/v00.jpg)"><img src="assets/v00.jpg" alt=""><figcaption>Qo'y bozori · 310K ♥</figcaption></figure>
+      <figure class="hv" data-v="v04" style="--poster:url(assets/v04.jpg)"><img src="assets/v04.jpg" alt=""><figcaption>977 kg buqa · 197K ♥</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 9. VIDEOLAR -->
+<section class="reels-sec" id="videolar">
+  <div class="wrap head row">
+    <div><p class="eyebrow">Instagram · @xasan_mochkichir</p><h2>Eng zo'r <em>videolar</em></h2></div>
+    <a class="btn ghost sm" href="https://www.instagram.com/xasan_mochkichir/" target="_blank" rel="noopener">Instagram'da kuzatish →</a>
+  </div>
+  <div class="reels" id="reels"></div>
+</section>
+
+<!-- 10. BUYURTMA -->
+<section class="order" id="buyurtma">
+  <div class="o-bg" style="background-image:url(assets/img/table.webp)"></div>
+  <div class="wrap order-in">
+    <div class="o-copy">
+      <p class="eyebrow">Buyurtma</p>
+      <h2>Qozon <em>kutyapti.</em></h2>
+      <p class="muted">Zalga keling, olib keting yoki uyingizga yetkazamiz. To'y, ma'raka va marosimlar uchun — butun qozon.</p>
+      <ul class="o-facts">
+        <li><b data-price></b><span>1 set — hammasi ichida</span></li>
+        <li><b id="hoursTxt">17:00–01:00</b><span>har kuni</span></li>
+        <li><b>Keles</b><span>Abdurahmon ko'chasi</span></li>
+      </ul>
+    </div>
+    <form class="o-form" id="orderForm" novalidate>
+      <div class="seg" id="modeSeg">
+        <label><input type="radio" name="mode" value="Dostavka" checked><span>🚚 Dostavka</span></label>
+        <label><input type="radio" name="mode" value="Olib ketish"><span>🥡 Olib ketaman</span></label>
+        <label><input type="radio" name="mode" value="Butun qozon (marosim)"><span>🔥 Butun qozon</span></label>
+      </div>
+      <div class="qty-row" id="qtyRow">
+        <div><b>Necha kishilik?</b><small id="qtyHint">1 set = 1 kishi</small></div>
+        <div class="stepper"><button type="button" data-d="-1" aria-label="Kamaytirish">−</button><output id="qty">2</output><button type="button" data-d="1" aria-label="Ko'paytirish">+</button></div>
+      </div>
+      <div class="fg two">
+        <label>Ismingiz<input name="name" autocomplete="name" placeholder="Masalan, Jasur"></label>
+        <label>Telefon<input name="phone" inputmode="tel" autocomplete="tel" placeholder="+998 90 123 45 67"></label>
+      </div>
+      <div class="fg addr" id="addrRow">
+        <label>Manzil<input name="address" autocomplete="street-address" placeholder="Ko'cha, uy, mo'ljal"></label>
+        <button type="button" class="btn ghost sm" id="geoBtn">📍 Joylashuv</button>
+      </div>
+      <div class="fg two" id="eventRow" hidden>
+        <label>Sana<input name="date" type="date"></label>
+        <label>Mehmonlar soni<input name="guests" inputmode="numeric" placeholder="masalan, 200"></label>
+      </div>
+      <label class="fg">Izoh<textarea name="note" rows="2" placeholder="Go'shti ko'proq bo'lsin 🙂"></textarea></label>
+      <div class="total"><span id="totLbl">Jami</span><b id="total">0</b></div>
+      <p class="err" id="err"></p>
+      <button class="btn fire full" type="submit">Buyurtmani yuborish</button>
+      <p class="small muted" id="closedNote"></p>
+    </form>
+  </div>
+</section>
+
+<!-- 11. MANZIL -->
+<section class="contact" id="manzil">
+  <div class="wrap contact-in">
+    <div>
+      <p class="eyebrow">Manzil</p>
+      <h2>Keles,<br><em>Abdurahmon ko'chasi</em></h2>
+      <p class="muted">Mo'ljal — eski to'yxona o'rni. Mashinani mahallaga xalaqit bermasdan, tartib bilan qo'yishingizni so'raymiz.</p>
+      <ul class="info">
+        <li><span>Ish vaqti</span><b id="hoursTxt2">17:00 – 01:00</b><small id="status2"></small></li>
+        <li><span>Dostavka</span><b><a href="tel:+998937775151">93 777 51 51</a></b></li>
+        <li><span>Admin</span><b><a href="tel:+998935488585">93 548 85 85</a></b></li>
+      </ul>
+      <div class="cta">
+        <a class="btn fire" id="routeBtn" target="_blank" rel="noopener">Yo'nalish olish →</a>
+        <a class="btn ghost" href="https://t.me/Xasan_Mochkichir" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn ghost" href="https://www.youtube.com/channel/UCS-nCowdfnje1qI4iEgyHlg" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+    <div class="map"><iframe id="mapFrame" title="Xarita" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a class="brand" href="#top"><img src="assets/logo.jpg" alt=""><span>Xasan<br><i>Mochkichiri</i></span></a>
+    <p class="big-q">Hurmatdasizlar!</p>
+    <p class="muted small">© <span id="yr"></span> «Xasan Mochkichiri» MChJ · Keles, Toshkent viloyati</p>
+  </div>
+</footer>
+
+<a class="fab" href="#buyurtma" id="fab">Buyurtma · <span data-price></span></a>
+
+<div class="modal" id="done" role="dialog" aria-modal="true">
+  <div class="mbox">
+    <button class="x" data-close aria-label="Yopish">✕</button>
+    <div class="ok-ic">✓</div>
+    <h3 id="doneTitle">Buyurtma tayyor!</h3>
+    <p class="muted" id="doneMsg"></p>
+    <pre class="otext" id="oText"></pre>
+    <div class="col">
+      <a class="btn fire full" id="tgSend" target="_blank" rel="noopener">Telegram orqali yuborish</a>
+      <a class="btn ghost full" href="tel:+998937775151">📞 Qo'ng'iroq: 93 777 51 51</a>
+      <button class="btn ghost full" id="copyBtn">Matnni nusxalash</button>
+    </div>
+  </div>
+</div>
+<div class="modal lb" id="lb"><button class="x" data-close aria-label="Yopish">✕</button><video id="lbv" playsinline controls></video><a id="lbig" class="btn ghost sm" target="_blank" rel="noopener">Instagram'da ochish →</a></div>
+<div class="toast" id="toast"></div>
+
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js"}}</script>
+<script type="module" src="scene.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
